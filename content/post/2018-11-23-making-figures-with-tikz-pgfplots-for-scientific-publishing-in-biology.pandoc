@@ -1,0 +1,58 @@
+---
+layout: post
+title: Making figures with TikZ/pgfplots for scientific publishing in Biology
+date: 2018-11-23 09:29:39.000000000 +05:30
+type: post
+published: true
+status: publish
+categories:
+- Scientific Writing
+- Visualization
+tags:
+- camkii
+- data-visualization using pgfplots
+- eLife
+- memory
+- pgfplots
+- subunit-exchange
+- tikz
+excerpt: 'Tikz and pgfplots are great for data visualization but keep in mind that
+  they are not for faint hearted. '
+---
+
+I am a heavy user of `matplotlib` but secretly I am in love with `tikz` (well
+who isn\'t!). I\'ve been training myself with tikz and pgfplots for few years
+now, by drawing (umm.. coding) figures for labnotes, journal club and
+student\'s seminars. For [my recent paper published in
+eLife](https://elifesciences.org/articles/41412), I used tikz/pgfplots to draw
+all my figures and the results were awesome!
+
+{{< gallery >}}
+  {{< figure
+  src="https://iiif.elifesciences.org/lax:41412%2Felife-41412-fig1-v2.tif/full/617,/0/default.webp" >}}
+  {{< figure
+  src="https://iiif.elifesciences.org/lax:41412%2Felife-41412-fig5-v2.tif/full/1500,/0/default.jpg" >}}
+  {{< figure
+  src="https://iiif.elifesciences.org/lax:41412%2Felife-41412-fig7-v2.tif/full/1500,/0/default.jpg" >}}
+  {{< figure
+  src="https://iiif.elifesciences.org/lax:41412%2Felife-41412-app1-fig2-v2.tif/full/1500,/0/default.jpg"
+  >}}
+{{< /gallery >}}
+
+
+The code and data used to generate these figures are available on [my Github
+repository](https://github.com/dilawar/SinghAndBhalla_CaMKII_SubunitExchange_2018/PaperFigures/).
+
+I also made a striking digest image for eLife using Tikz only [code
+here](https://raw.githubusercontent.com/dilawar/SinghAndBhalla_CaMKII_SubunitExchange_2018/master/PaperFigures/Abstract/camkii_xkcd.b.tex).
+It turns out to be more suitable for XKCD than for eLife. Nonetheless, I am
+proud of it and hope that it makes the cut and get published in 
+[eLife digest](https://elifesciences.org/digests) of my paper.
+
+![](images/camkii_xkcd-b.png){width="100%"}
+
+Tikz and pgfplots are great for making neat figures but keep in mind
+that they are not for faint hearted. You'd need lot of patience and time
+to get comfortable with them (just like vim editor). And just like the
+vim Jedi, you'd feel grateful that you put enough effort to become
+master of TikZ/pgfplots.

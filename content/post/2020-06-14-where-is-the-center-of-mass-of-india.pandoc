@@ -1,0 +1,87 @@
+---
+layout: post
+title: Where is India's center of mass?
+date: 2020-06-14 14:46:04.000000000 +05:30
+type: post
+categories:
+- GIS
+- Visualization
+tags:
+- center of mass
+- centroid
+- india
+- india map
+- map of india
+author:
+  login: dilawars
+  email: dilawar.s.rajput@gmail.com
+  display_name: Dilawar
+  first_name: Dilawar
+  last_name: Singh
+---
+
+If you were to lift the country on your finger tip, where will you keep your
+finger? Remember it needs to be balanced. There is no easy precise answer to
+this question. Some estimates are easier to make. One such estimate is made in
+this post.
+
+The centroid of the map is most likely not the right answer. If you lift the
+country at its centroid, it wont be balanced. In case of India, the Himalayas
+in the north are heavy and there is no counter-balance in the south. So if you
+lift the country at its centroid, she will immediately tilt to the north and
+bump her head. You don't want that!
+
+We want to know the [center of
+mass](https://en.wikipedia.org/wiki/Center_of_mass) of the country. If we put a
+weight on each pixel of the map proportional to its height, then the center of
+mass is the weighted centroid.
+
+### Results
+
+Let's see the results first. In the map below, I have put two markers on the
+map.  The one in the Madhya Pradesh (MP) is the centroid. If you travel from
+this point to any arbitrary direction till you hit the boundary many many
+times, then, on average, you will spend the least amount of time and money than
+any other starting point.
+
+![See the live version
+<https://dilawar.github.io/map-india-center/>](/images/india_com.png){width=400px}
+
+
+The second pin shows the center of mass. This is place where you should put your
+finger to balance the country! This looks very close to north but imagine the
+Himalayas. Probably following picture which approximate the elevation profile
+of the country will convince you.
+
+![Rough elevation profile of India. Brighter the pixel, higher the elevation.
+Pixels in Himalayas are bright while the Ganges plane and coastal areas are
+dark.](https://ndownloader.figshare.com/files/23133395/preview/23133395/preview.jpg){width=400px}
+
+
+There are a few caveats to this answer. First I am assuming uniform soil
+density which is not true but not a bad approximation. The sand in Ganges
+plains has lower density than rocks of Western Ghats or the Himalayas. Second
+the precision of mapping boundaries of India. They are mapped from the near
+spherical earth to a 2d paper.
+
+### Technical details
+
+The technical details can be found at this repository
+<https://github.com/dilawar/map-india-center>. This work can easily be extended
+to compute the center of mass of each state easily. I might do it in the future.
+
+This exercise has generated a large dateset: a single GeoTIFF file with
+elevation profile of the country. This file is over 2.5GB and is hosted here
+<https://figshare.com/articles/India_s_elevation_profile_in_a_GeoTIFF_file/12479306>.
+This profile is generated after merging downloaded tiles together (from
+<http://srtm.csi.cgiar.org/srtmdata/>)  and clipping it using boundaries of
+India downloaded from here
+<https://github.com/datameet/maps/tree/master/Country>
+
+### Endnotes
+
+1. The founder of datameet has written a nice blog in EPW: [Open Data in India:
+   In a Restrictive Copyright Regime, Voluntary Organisations Pitch in to Make
+   Data
+   Accessible](https://www.epw.in/engage/article/voluntary-organisations-india-counteract-states-copyright-regime-open-data)
+
