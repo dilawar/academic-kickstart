@@ -10,7 +10,7 @@ title = "ιπ"
 
 # The URL of your site.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "https://dilawar.blog"
+baseurl = "https://ipitech.co.in/"
 
 # Enter a copyright notice to display in the site footer.
 # To display a copyright symbol, type `&copy;`. For current year, type `{year}`.
@@ -24,6 +24,7 @@ copyright = "&copy; {year}, Dilawar Singh"
 theme = "academic"
 
 disqusShortname = "ipitech-co-in"
+googleAnalytics = "UA-168011040-1"
 
 # Get last modified date for content from Git?
 enableGitInfo = false
