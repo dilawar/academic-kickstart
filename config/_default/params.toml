@@ -93,10 +93,7 @@ phone = "+91 80 2366 6504"
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "Southern Lab Complex, NCBS Bangalore"
-  , city = "Bangalore"
-  , region = "KA", postcode = "560065"
-  , country = "India", country_code = "IN"}
+address = {street = "Southern Lab Complex, NCBS Bangalore", city = "Bangalore", region = "KA", postcode = "560065" , country = "India", country_code = "IN"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
@@ -158,9 +155,7 @@ sharing = true
 
 # Show a copyright license from creativecommons.org in the site footer?
 # Page specific copyright licenses are also possible by adding this option to a page's front matter.
-copyright_license = {enable = true, allow_derivatives = false,
-  share_alike = true, allow_commercial = false, 
-  notice = "This work is licensed under {license}"}
+copyright_license = {enable = true, allow_derivatives = false, share_alike = true, allow_commercial = false, notice = "This work is licensed under {license}"}
 
 # Highlight the site author (superuser) in author lists? (true/false)
 highlight_superuser = false
